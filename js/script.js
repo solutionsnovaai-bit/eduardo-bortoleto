@@ -163,7 +163,6 @@
     const cntObs = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         animCount(document.getElementById('cnt-rating'), 5.0, '', 1);
-        animCount(document.getElementById('cnt-focus'),  100, '%', 0);
         cntObs.disconnect();
       }
     }, { threshold: 0.5 });
@@ -201,7 +200,7 @@
     });
   }
 
-  document.querySelectorAll('.service, .pillar, .btn-primary, .btn-secondary, .ig-card, .hstat')
+  document.querySelectorAll('.service, .pillar, .btn-primary, .btn-secondary, .ig-card, .hstat, .prev-sub-item')
     .forEach(addRipple);
 
   /* ══════════════════════════════════════════
